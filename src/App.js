@@ -15,7 +15,7 @@ class App extends React.Component {
   }
 
   async componentDidMount(){
-    await axios.get('http://localhost:5000/books/')
+    await axios.get('/books')
     .then(res => {
       const books = res.data
       let allBooks = []
